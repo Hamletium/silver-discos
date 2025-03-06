@@ -1,0 +1,466 @@
+<!------------------------------------
+             И что ты тут забыл?
+              /
+   (\   /)   /
+   ( ・ᆺ・)
+  c(__")(_")         Съебись нахуй <3
+------------------------------------>
+
+
+<!DOCTYPE html>
+<head>
+ 
+<title>Ludens</title>
+ 
+<link rel="shortcut icon" href="https://i.imgur.com/8U5XmXD.png">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+ <link rel="stylesheet" href="https://unpkg.com/7.css">
+ 
+<style>
+ 
+ 
+/* COLOR THE PAGE HERE */
+ 
+:root {
+  --background:#0f0f0f;
+  --boxes:#141414;
+  --accentone:#529ecc; 
+  --accenttwo:#529ecc;
+  --accentthree:#529ecc;
+  --text:#fff;
+  --title:#fff;
+  --progress-color-normal:green;
+}
+ 
+ 
+ 
+/* TOOLTIPS */
+.tippy-tooltip.custom-theme {
+background-color:var(--text);
+color:var(--boxes);
+text-align:center;
+font-family:'Poppins', sans-serif;
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:1px;
+font-size:0.90em;
+box-shadow: 7px 7px 7px -9px rgba(000,000,000, 0.45);}
+ 
+.tippy-tooltip.custom-theme .tippy-svg-arrow {
+fill:var(--text);}
+ 
+ 
+iframe.tmblr-iframe {
+display:none;
+opacity:0;
+z-index:999;
+right:80px;
+top:60px;
+position:fixed;
+width:0;
+padding-right:0px;
+filter:contrast(150%) invert(100%);
+-webkit-filter:contrast(150%) invert(100%);
+transform:scale(0.6);
+-webkit-transform:scale(0.6);
+transform-origin:100% 0;
+-webkit-transform-origin:100% 0;}  
+ 
+/* MAIN BODY/HTML CONTAINER */
+body, html {
+height: 100%;
+margin: 0;
+font-size:12px;
+font-family:'Poppins', sans-serif;
+overflow-x:hidden;
+background-image:url('https://i.imgur.com/r28XYpO.png');
+background-repeat:repeat;
+background-attachment:fixed;
+/*CHANGE THE MAIN BACKGROUND COLOR*/
+background-color:#0f0f0f;
+}
+ 
+ 
+/* ENTRY LINKS / BODY LINKS  */
+a:link, a:active, a:visited {
+clear:both;
+z-index:2!Important;
+text-decoration:none;
+/*MAIN LINKS COLORS*/
+color:var(--text);}
+ 
+a:hover {
+clear:both;
+z-index:99999999!Important;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-o-transition: all .3s;
+-ms-transition: all .3s;
+transition: all .3s;
+/*MAIN LINKS HOVER COLOR*/
+color:var(--text);}
+ 
+ 
+ 
+ #draggy {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: calc(50% - 240px);
+    left: calc(50% - 180px);
+}
+
+ 
+ #left{
+    display: contents;
+*display: inline;
+zoom: 1;
+position: fixed;
+bottom: 0;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+  }
+  
+  #left .img_bg {
+    position: absolute;
+    bottom: 75px;
+    right: 270px;
+    width: 300px;
+    height: 300px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: -5;
+    filter: saturate(0.8);
+  }
+  
+  #right{
+    display: contents;
+*display: inline;
+zoom: 1;
+position: fixed;
+bottom: 0;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+  }
+  
+  
+  #right .img_bg1 {
+position: absolute;
+bottom: -30px;
+left: 315px;
+width: 100px;
+height: 100px;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+animation: wiggleanimation 1.5s linear 0.3s infinite;
+filter: saturate(0.8);
+  }
+ 
+@keyframes wiggleanimation{
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+    
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+
+  
+}
+
+/* replace with cd image that has transparent background. must be 150px by 150px. */
+:root {
+--cd-image: url('https://i.ibb.co/TBncD67/Digital-CD-Disk-Vector-Transparent-PNG.png');
+}
+
+.profile-pic:before {
+content: "";
+background: var(--cd-image);
+position: absolute;
+    top: 106px;
+    left: -75px;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    z-index: -6;
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+transition: left ease 0.5s;
+}
+.profile-pic:hover:before {
+left: -125px;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.profile-pic .pfp-fallback {
+float: right;
+width: 163px;
+height: 160px;
+border: none;
+}
+.general-about .profile-pic img {
+max-width: inherit;
+}
+
+
+.huh {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-image: url(https://i.ibb.co/x1KSWSM/channels4-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    height: 65px;
+    top:6px;
+}
+/* Centered text */
+.huh_text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.disk-type{
+    top: 6px;
+    left: -6px;
+    width: 384px;
+    height: 80px;
+    position: relative;
+    box-shadow: inset 0 1px #c3d2e8;
+    background: radial-gradient(circle, rgba(252, 252, 254, 1) 0%, rgba(219, 231, 245, 1) 50%);
+    margin-top: 60px;
+}
+.fline{
+    position: relative;
+    left: 160px;
+    width: 57%;
+    height: 1px;
+    bottom: 19px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, .15), inset -1px 0 #fff;
+}
+.imghover{
+    margin-top: -325px;
+    width: 372px;
+    height: 325px;
+    background: linear-gradient(135deg, #dceafc, #c6dffc);
+    position: relative;
+    border: #7da2ce 1px solid;
+    border-radius: 5px;
+    box-shadow: inset -1px -1px 1px 0 #eaf3fd, inset 1px 1px 1px 0 #eaf3fd;
+    opacity: 0.8;
+}
+.pic1{
+        position: relative;
+    text-align: center;
+    width: 100%;
+    background-image: url(https://i.imgur.com/gINBLh0.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 209px;
+}
+.pikcha1{position: relative;
+    z-index: 1;
+    padding: 6px 6px 0px 6px;}
+
+.dsk{
+        position: relative;
+    width: 80px;
+    height: 80px;
+    left: 12px;
+    /* background-color: black; */
+    background-image: url(https://i.imgur.com/JnF07oG.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.dsk-info {
+    position: absolute;
+    width: 260px;
+    height: 60px;
+    /*background-color: azure; */
+    top: 10px;
+    left: 116px;
+}
+
+.title-bar-controls button {
+    padding:5px;
+}
+.title-bar-controls button:before {
+    box-shadow: 0 1px 0 #fffa, 1px 0 0 #fffa, -1px 0 0 #fffa;
+}
+.title-bar-controls button:first-child, .title-bar-controls button:first-child:before {
+    border-radius: 0px;
+}
+
+
+.body__inner{
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+}
+
+.hacking-animation {
+  background: #151515;
+  color: #eee;
+  height: 100%;
+
+  &__text {
+    bottom: 0;
+    color: #eee;
+    font-size: 9px;
+    left: 0;
+    line-height: 1.5rem;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  &__character {
+    animation: type 1s linear;
+    color: #45aae7;
+  }
+}
+
+@keyframes type {
+  0% {
+    background: #fff;
+    color: #eee;
+  }
+
+  5% {
+    background: transparent;
+    color: #fff;
+  }
+
+  100% {
+    background: transparent;
+    color: #45aae7;
+  }
+}
+
+
+{CustomCSS}
+</style>
+ 
+</head>
+<body>
+<div class="body__inner"></div>
+ <div id="draggy">
+ 
+<div class="window glass active" style="max-width: 400px">
+  <div class="title-bar">
+    <div class="title-bar-text">Social links</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <a href="https://youtu.be/rAbt4rUo-AM?si=DMg4zhaec7hJewN-&t=14"><button aria-label="Maximize" style="
+    border-radius: 0px 0px 0px 0px;
+    border-right: var(--window-border) var(--control-border-color);
+"></button></a>
+      
+      <a href="https://www.google.ru/"><button aria-label="Close" title="Exit" style="
+    border-radius: 0px 0px 3px 0px;
+"></button></a>
+    </div>
+  </div>
+  <div class="window-body has-space">
+
+<details open="" style="
+    position: relative;
+    padding: 6px 0px 12px 12px;
+    color: #6d7787;
+">
+  <summary><strong>Doctype moodboard</strong> — •</summary>
+</details>
+    <div class="fline"></div>
+    
+    <div class="pikcha1">
+        <div class="pic1"></div>
+        <div class="huh">
+        <div role="tooltip" class="is-bottom is-left" style="width: 20%;left: 80px;top: -15px;padding: 10px;">Bruh</div>
+                        </div>
+        <p style="text-align: center;"><span style="color: #333333;">_.png</span></p>
+    </div>
+    
+    <div class="imghover"></div>
+
+
+<ul role="menu" class="can-hover" style="    width: 150px;
+    left: 218px;
+    bottom: 120px;
+    position: absolute;
+    z-index: 2;">
+  <li role="menuitem">
+    <img src="https://i.pinimg.com/736x/58/11/ee/5811eee5f453b136351d68f0bad5da88.jpg" style="width: 18px;filter: contrast(0.8);">
+    <a href="https://t.me/mo104ko" target=_blank >Telegram</a>
+  </li>
+  <li role="menuitem">
+    <img src="https://cdn2.steamgriddb.com/icon/0305650d94e32c656ec55309a8467b4c/32/256x256.png" style="width: 18px;filter: contrast(0.8);">
+    <a href="https://steamcommunity.com/id/hamletium/" target=_blank >Steam</a>
+  </li>
+  <li role="menuitem">
+    <img src="https://i.pinimg.com/736x/c1/2b/1a/c12b1a70f0d6135073b62aa90fe23bcf.jpg" style="width: 18px;filter: contrast(0.8);">
+    <a href="https://open.spotify.com/user/fd3baygtffz6qj8d8r6tz25dv?si=hDTv3kS9RtaetQw-YErwJw&nd=1" target=_blank >Spotify</a>
+  </li>
+</ul>
+
+
+
+<div class="disk-type">
+    <div class="dsk"> </div>
+        <div class="dsk-info">
+                <p style="text-align: left;"><span style="
+   position: relative;
+    top: -2px;
+">Hypnogogiya</span></p>
+<p style="text-align: left;"><span style="
+    position: relative;
+    top: -8px;
+">Project</span></p>
+<p style="text-align: left;"><span style="
+    position: relative;
+    top: -58px;
+    left: 120px;
+">By: Haml℮tium</span></p>
+<p style="text-align: left;"><span style="
+    position: relative;
+    top: -64px;
+    left: 151px;
+">©2023</span></p>
+        </div>
+    </div>
+
+  </div>
+  
+  
+  <div id="left">
+    <img src="https://i.imgur.com/94b1Bem.png" class="img_bg" />
+  </div>
+  <div id="right">
+    <img src="https://i.imgur.com/YYqh4ja.png" class="img_bg1" />
+  </div>
+  
+ <a href="https://youtu.be/Vu0nRz_bQ0Y?si=cBY6WmibVWy2FcAj" target=_blank > <div class="profile-pic"></div></a>
+  
+</div>
+ </div>
+</body>
+</html>
